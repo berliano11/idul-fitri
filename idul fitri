@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Idul Fitri Sayang</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #0d1b2a, #1b263b, #415a77);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            max-width: 90%;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        .btn {
+            background: #ffcc00;
+            color: #000;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+            font-weight: bold;
+            box-shadow: 0px 3px 6px rgba(255, 204, 0, 0.5);
+        }
+        .btn:hover {
+            background: #ffaa00;
+            transform: scale(1.05);
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ffcc00;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌙 Selamat Hari Raya Idul Fitri 1446 H</h1>
+        <p>Sayanggg, Minal Aidin Wal Faizin yaa. Mohon Maaf Lahir dan Batin 🙏🏻🙏🏻</p>
+        <button class="btn" onclick="showMessage()">🌟 Klik untuk Pesan Spesial</button>
+        <p class="hidden-message" id="message">Happy Eid Mubarak ya sayanggg 🫶🏻<br><br>
+            Alhamdulillah bisa lebaran lagi sama aayanggg, bersyukur bgtt bisa lebaran bareng lagi<br>
+            Aku minta maaf ya sayanggg, kalo ano masi banyak bgt salah sama aayanggg, apalagi pas bulan puasa ini kita ada bebrapa ribut-ribut sitik😚<br><br>
+            Semoga dimaafin ya sayanggg, aku juga udah maafin aayanggg kalo ayangg ada alah koo 🤭<br>
+            Ano juga minta maaf ya sayang, kalo keluarga ano ada salah sama aayanggg, mungkin pernah buat aayangg sakit hati, tolong dimaafin ya sayangg 🫶🏻<br><br>
+            Mungkin ano cuma bisa bilang itu sayanggg, pokonya semoga kita bisa bahagia di hari ini ya sayangg 🫶🏻🫶🏻<br><br>
+            (Taqabbalallāhu minnā wa minkum ṣāliḥal-a‘māl, kullu ‘ām wa antum bikhayr, wa ghafara-llāhu lanā wa lakum, wa ja‘alanā minal-‘āidīn wal-fāizīn.)<br><br>
+            
+            Mmwahhhh, aku sayang banget sama kamu! 🫶🏻🫶🏻</p>
+    </div>
+    <script>
+        function showMessage() {
+            let message = document.getElementById('message');
+            message.style.display = 'block';
+            setTimeout(() => {
+                message.style.opacity = '1';
+            }, 100);
+        }
+    </script>
+</body>
+</html>
